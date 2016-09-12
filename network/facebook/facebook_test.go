@@ -39,7 +39,7 @@ func TestErrorResponse(t *testing.T) {
 
 	client.BaseURL = ts.URL
 
-	result, err := client.GetShareCount("http:")
+	result, err := client.GetShareCount("http://iamsalnikov.ru")
 	if err == nil {
 		t.Error("http: must not be shared")
 	}
