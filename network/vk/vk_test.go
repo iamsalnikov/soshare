@@ -23,7 +23,7 @@ func TestOKResponse(t *testing.T) {
 	}
 
 	if result != 37 {
-		t.Error("Expected 37, got ", result, err)
+		t.Error("Expected 37, got ", result)
 	}
 }
 
