@@ -25,6 +25,6 @@ func IsURL(str string) bool {
 	if u.Host == "" && (u.Path != "" && !strings.Contains(u.Path, ".")) {
 		return false
 	}
-	return rxURL.MatchString(str)
 
+	return rxURL.MatchString(str)
 }
